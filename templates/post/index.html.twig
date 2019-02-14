@@ -6,14 +6,12 @@
 
     <h1>Форма добавления постов</h1><br/>
 
-    {% for message in app.flashes('info') %}
-        <div class="alert alert-success">
-            {{ message }}
-        </div>
-    {% endfor %}
+    {% form_theme form 'bootstrap_3_horizontal_layout.html.twig' %}
 
     {{ form_start(form , {'attr': {'novalidate' : 'novalidate'}}) }}
+
     {{ form_widget(form) }}
+
     <div class="form-group row">
         <div class="col-sm-10 offset-sm-2">
             <button type="submit" class="btn btn-primary">Отправить</button>

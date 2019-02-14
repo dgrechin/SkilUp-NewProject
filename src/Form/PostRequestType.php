@@ -12,9 +12,9 @@ class PostRequestType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('name', null, ['label' => 'Название : '])
+            ->add('name', null, ['label' => 'Название поста : '])
 
-            ->add('description', null, ['label' => 'Текст : '])
+            ->add('description', null, ['label' => 'Текст поста : '] , ['type'=> 'textarea'])
         ;
     }
 
