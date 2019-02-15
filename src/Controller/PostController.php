@@ -24,10 +24,7 @@ class PostController extends AbstractController
                 $manager = $this->getDoctrine()->getManager();
                 $manager->persist($postRequest);
                 $manager->flush();
-                $this->addFlash(
-                    'info',
-                    'Пост принят'
-                );
+
                 return $this->redirectToRoute('posts');
             }
             return $this->render('post/index.html.twig', [

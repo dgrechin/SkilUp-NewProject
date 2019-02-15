@@ -14,7 +14,7 @@ class PostRequestType extends AbstractType
         $builder
             ->add('name', null, ['label' => 'Название поста : '])
 
-            ->add('description', null, ['label' => 'Текст поста : '] , ['type'=> 'textarea'])
+            ->add('description', null, ['label' => 'Текст поста : '] )
         ;
     }
 
