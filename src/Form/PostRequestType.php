@@ -15,6 +15,8 @@ class PostRequestType extends AbstractType
             ->add('name', null, ['label' => 'Название поста : '])
 
             ->add('description', null, ['label' => 'Текст поста : '] )
+
+
         ;
     }
 

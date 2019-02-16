@@ -15,7 +15,7 @@ class DefaultController extends AbstractController
     public function post( PostRepository $postRepository)
     {
 
-        $posts = $postRepository->findBy(['createdAt'] );
+        $posts = $postRepository->findOrder();
 
         return $this->render('default/index.html.twig', [
             'posts' => $posts,

@@ -25,7 +25,7 @@ class PostController extends AbstractController
                 $manager->persist($postRequest);
                 $manager->flush();
 
-                return $this->redirectToRoute('posts');
+                return $this->redirectToRoute('postAdd');
             }
             return $this->render('post/index.html.twig', [
                 'form' => $form->createView()
