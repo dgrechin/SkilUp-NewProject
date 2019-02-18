@@ -4,5 +4,9 @@
     <option name="pathToTranslation" value="var/cache/dev/translations" />
     <option name="directoryToWeb" value="public" />
     <option name="pluginEnabled" value="true" />
+<<<<<<< HEAD
+=======
+    <option name="lastServiceGeneratorLanguage" value="yaml" />
+>>>>>>> 23366aeb57aaabdcb89e698d771e18d9c8e23416
   </component>
 </project>

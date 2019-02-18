@@ -19,22 +19,29 @@ class PostRepository extends ServiceEntityRepository
         parent::__construct($registry, Post::class);
     }
 
+
+    public function findOrder()
+    {
+        return $this->findBy(array(), array('createdAt' => 'DESC'),3);
+    }
+
+
     // /**
     //  * @return Post[] Returns an array of Post objects
     //  */
-    /*
+/*
     public function findByExampleField($value)
     {
         return $this->createQueryBuilder('p')
-            ->andWhere('p.exampleField = :val')
-            ->setParameter('val', $value)
+            ->andWhere('p.createdAt = created_at')
+            ->setParameter('', $value)
             ->orderBy('p.id', 'ASC')
             ->setMaxResults(10)
             ->getQuery()
             ->getResult()
         ;
     }
-    */
+*/
 
     /*
     public function findOneBySomeField($value): ?Post
